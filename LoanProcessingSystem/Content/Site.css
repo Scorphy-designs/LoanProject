@@ -1,0 +1,421 @@
+﻿/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+/* Override the default bootstrap behavior where horizontal description lists 
+   will truncate terms that are too long to fit in the left column 
+*/
+.dl-horizontal dt {
+    white-space: normal;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+
+h2 {
+    font-size: 60px;
+}
+
+p {
+    padding: 10px;
+}
+
+.carousel-caption {
+    padding-bottom: 50px;
+    margin-bottom: 30px;
+}
+
+.animated {
+    -webkit-animation-duration: 1.5s;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fadeInRight {
+    from {
+        opacity: 0;
+        -webkit-transform: translate3d(100px, 0, 0);
+        transform: translate3d(100px, 0, 0);
+    }
+
+    to {
+        opacity: 1;
+        -webkit-transform: none;
+        transform: none;
+    }
+}
+
+@keyframes fadeInRight {
+    from {
+        opacity: 0;
+        -webkit-transform: translate3d(100px, 0, 0);
+        transform: translate3d(100px, 0, 0);
+    }
+
+    to {
+        opacity: 1;
+        -webkit-transform: none;
+        transform: none;
+    }
+}
+
+.fadeInRight {
+    -webkit-animation-name: fadeInRight;
+    animation-name: fadeInRight;
+}
+
+.btn-transparent {
+    background: #fff;
+    color: #000;
+    border: .5px solid #fff;
+    width: 200px;
+    padding: 10px;
+}
+
+    .btn-transparent:hover {
+        background-color: #ec8b00;
+    }
+
+.btn-rounded {
+    border-radius: 70px;
+}
+
+
+
+
+
+
+
+
+
+.flexborder {
+    width: 85vw;
+    height: 100vh;
+    overflow: scroll;
+    margin-top: 3vw;
+}
+
+    .flexborder::-webkit-scrollbar {
+        display: none;
+    }
+
+/*.roundcard:hover{
+    height: 50vh;
+    width: 100%;
+    background-color: #fff;
+    border-radius: 3%;
+    box-shadow: 0px 7px 40px #8e8e8e;
+    margin-left: 7vw;
+    margin-top: 5vw;
+    overflow: hidden;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+}*/
+
+.roundcard {
+    height: 40vh;
+    width: 100%;
+    background-color: #fff;
+    border-radius: 3%;
+    box-shadow: 0px 7px 40px #efefef;
+    margin-left: 7vw;
+    margin-top: 5vw;
+    overflow: hidden;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+}
+
+.bottomroom {
+    width: 100%;
+    height: 20vh;
+}
+
+.roundimage {
+    width: 100%;
+    height: 65%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.cardtitle {
+    text-align: center;
+    margin-top: 5vh;
+    margin-bottom: 10px;
+    color: #953a80;
+    font-weight: 600;
+    font-size: 28px;
+    letter-spacing: 2px;
+}
+
+.cardsubtitle {
+    text-align: center;
+    padding: 2px;
+    margin-top: 1vh;
+    color: #060606;
+    font-size: 18px;
+}
+
+.cardsubsubtitle {
+    padding-left: 8%;
+    margin-top: 1vh;
+    text-transform: uppercase;
+    color: #6C7A89;
+    font-size: 14px;
+}
+
+.starwarstop {
+    width: 100%;
+    height: 6%;
+    background-color: #fff !important;
+    z-index: 9000;
+    padding: 1%;
+    box-shadow: 0px 2px 40px #e9e9e9;
+}
+
+.logoicon {
+    width: 40px;
+    height: 40px;
+    margin-left: 5vw;
+}
+
+.centerimage {
+    width: 150px;
+    height: 20px;
+    margin-top: -4vh;
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+}
+
+.loantag {
+    width: 100%;
+    padding-left: 40px;
+    margin: 0 auto;
+    margin-top: 60px;
+    color: #ec8b00;
+}
+
+.loanparagraph {
+    width: 80%;
+    padding-left: 40px;
+    line-height: 1.5;
+    font-size: 3rem;
+}
+
+@media all and (max-width: 600px) {
+    #dropcap {
+        initial-letter: 2;
+    }
+
+    p {
+        font-size: 1.5rem;
+    }
+
+    body {
+        margin-top: 4rem;
+    }
+}
+
+
+
+.btn1 {
+    width: auto;
+    height: 48px;
+    background: #ec8b00;
+    border-radius: 50px;
+    margin: 2px;
+}
+
+    .btn1:hover {
+        background: #ec8b00;
+    }
+
+
+.navbar-inverse .navbar-nav > li > a {
+    color: black;
+}
+
+
+
+    .navbar-inverse .navbar-nav > li > a:active {
+        color: #ec8b00;
+    }
+
+    .navbar-inverse .navbar-nav > li > a:hover {
+        color: #ec8b00;
+    }
+
+.navbar-inverse .navbar-toggle {
+    border: none;
+    color: #ec8b00;
+    background-color: #ec8b00;
+}
+
+
+
+
+/****** LOGIN MODAL ******/
+
+.loginmodal-container {
+    padding: 30px;
+    max-width: 350px;
+    width: 100% !important;
+    background-color: #F7F7F7;
+    margin: 0 auto;
+    border-radius: 15px;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+}
+
+    .loginmodal-container h1 {
+        text-align: center;
+        font-size: 2em;
+    }
+
+
+    .loginmodal-container input[type=text], input[type=password], input[type=email], select {
+        height: 42px;
+        border-radius: 6px;
+        align-items: center;
+        font-size: 16px;
+        width: 100%;
+        text-align: center;
+        margin-bottom: 10px;
+        -webkit-appearance: none;
+        background: #fff;
+        text-decoration: none;
+        box-sizing: border-box;
+        -moz-box-sizing: border-box;
+    }
+
+        .loginmodal-container input[type=text]:hover, input[type=password]:hover {
+            -moz-box-shadow: inset 0 1px 2px rgba(0,0,0,0.1);
+            -webkit-box-shadow: inset 0 1px 2px rgba(0,0,0,0.1);
+            box-shadow: inset 0 1px 2px rgba(0,0,0,0.1);
+        }
+
+.loginmodal {
+    text-align: center;
+    font-size: 14px;
+    font-weight: 700;
+    height: 36px;
+    padding: 0 8px;
+    /* border-radius: 3px; */
+    /* -webkit-user-select: none;
+  user-select: none; */
+}
+
+.loginmodal-submit {
+    /* border: 1px solid #3079ed; */
+    border: 0px;
+    color: #fff;
+    text-shadow: 0 1px rgba(0,0,0,0.1);
+    background-color: #4d90fe;
+    padding: 17px 0px;
+    font-size: 14px;
+    /* background-image: -webkit-gradient(linear, 0 0, 0 100%,   from(#4d90fe), to(#4787ed)); */
+}
+
+    .loginmodal-submit:hover {
+        /* border: 1px solid #2f5bb7; */
+        border: 0px;
+        text-shadow: 0 1px rgba(0,0,0,0.3);
+        background-color: #ec8b00;
+        /* background-image: -webkit-gradient(linear, 0 0, 0 100%,   from(#4d90fe), to(#357ae8)); */
+    }
+
+.loginmodal-container a {
+    text-decoration: none;
+    color: #666;
+    font-weight: 400;
+    text-align: center;
+    display: inline-block;
+    opacity: 0.6;
+    transition: opacity ease 0.5s;
+}
+
+.login-help {
+    text-align: center;
+    font-size: 14px;
+}
+
+    .login-help a {
+        color: #fff;
+    }
+
+
+
+
+/* 
+Extra small devices (portrait phones, less than 544px) 
+No media query since this is the default in Bootstrap because it is "mobile first"
+*/
+h1 {
+    font-size: 1rem;
+}
+/*1rem = 16px*/
+/*
+####################################################
+M E D I A  Q U E R I E S
+####################################################
+*/
+
+/*
+::::::::::::::::::::::::::::::::::::::::::::::::::::
+Bootstrap 4 breakpoints
+*/
+/* Small devices (landscape phones, 544px and up) */
+@media (min-width: 544px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+    /*1rem = 16px*/
+}
+
+/* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
+@media (min-width: 768px) {
+    h1 {
+        font-size: 2rem;
+    }
+    /*1rem = 16px*/
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    h1 {
+        font-size: 2.5rem;
+    }
+    /*1rem = 16px*/
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    h1 {
+        font-size: 3rem;
+    }
+    /*1rem = 16px*/
+}
+
+/*
+::::::::::::::::::::::::::::::::::::::::::::::::::::
+Custom media queries
+*/
+
+/* Set width to make card deck cards 100% width */
+@media (min-width: 950px) and (max-width:1100px) {
+    h1 {
+        font-size: 2.75rem;
+        color: red;
+    }
+}

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="1db79cbfbea3453fa79d133cabfc5ec1" Name="Diagram1">
+        <EntityTypeShape EntityType="MortgageDbModel.AuthManager" Width="1.5" PointX="5.75" PointY="5.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MortgageDbModel.EnquiryTable" Width="1.5" PointX="7.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MortgageDbModel.InspectorDetail" Width="1.5" PointX="0.75" PointY="1.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="MortgageDbModel.LoanForm" Width="1.5" PointX="3" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="MortgageDbModel.ManagerDetail" Width="1.5" PointX="0.75" PointY="5.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="MortgageDbModel.StatusTrack" Width="1.5" PointX="5.25" PointY="1.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MortgageDbModel.sysdiagram" Width="1.5" PointX="7.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MortgageDbModel.UserRegister" Width="1.5" PointX="3" PointY="5.875" IsExpanded="true" />
+        <AssociationConnector Association="MortgageDbModel.FK__LoanForm__Inspec__182C9B23" ManuallyRouted="false" />
+        <AssociationConnector Association="MortgageDbModel.FK__LoanForm__Manage__1920BF5C" ManuallyRouted="false" />
+        <AssociationConnector Association="MortgageDbModel.FK__StatusTra__Appli__2B3F6F97" ManuallyRouted="false" />
+        <AssociationConnector Association="MortgageDbModel.FK__StatusTra__UserI__2C3393D0" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

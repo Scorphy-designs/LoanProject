@@ -1,0 +1,74 @@
+﻿@model LoanProcessingSystem.Model.EnquiryTable
+
+@{
+    ViewBag.Title = "Create";
+}
+
+<h2 style="color:#ec8b00;font-size:45px;margin-top:80px;text-align:center;">Technology designed for you</h2>
+<div class="roundcard" style=" height:auto; width:1200px;padding:40px; border-radius:10px;margin-bottom:20px; margin-top:20px; box-shadow: 0px 7px 40px #efefef;">
+  
+    @using (Html.BeginForm())
+    {
+        @Html.AntiForgeryToken()
+
+            <div class="form-horizontal" style="margin-left:30%;margin-right:25%;">
+
+                @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+                <div class="form-group">
+                    @Html.LabelFor(model => model.EmailId, htmlAttributes: new { @class = "control-label col-md-2" })
+                    <div class="col-md-10">
+                        @Html.EditorFor(model => model.EmailId, new { htmlAttributes = new { @class = "form-control" } })
+                        @Html.ValidationMessageFor(model => model.EmailId, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    @Html.LabelFor(model => model.PhoneNo, htmlAttributes: new { @class = "control-label col-md-2" })
+                    <div class="col-md-10">
+                        @Html.EditorFor(model => model.PhoneNo, new { htmlAttributes = new { @class = "form-control" } })
+                        @Html.ValidationMessageFor(model => model.PhoneNo, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    @Html.LabelFor(model => model.PropertyType, htmlAttributes: new { @class = "control-label col-md-2" })
+                    <div class="col-md-10">
+                        @Html.DropDownListFor(model => model.PropertyType, new List<SelectListItem>
+                           {
+                           new SelectListItem { Text =" Home Loan" , Value=" Home Loan" },
+                           new SelectListItem { Text ="Loan Against Commercial Property" , Value="Loan Against Commercial Property" },
+                           new SelectListItem { Text ="Loan Against Residential Property" , Value="Loan Against Residential Property" },
+                           new SelectListItem { Text ="Land Purchase Loan" , Value="Land Purchase Loan" },
+                           new SelectListItem { Text ="Loan to purchase another commercial property" , Value="Loan to purchase another commercial property" },
+                           new SelectListItem { Text ="Lease Rental Discounting" , Value="Lease Rental Discounting" }
+
+                       }, "--select Type --", new { @class = "form-control" })
+                        @Html.ValidationMessageFor(model => model.PropertyType, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+
+               
+
+                <div class="form-group">
+                    @Html.LabelFor(model => model.Message, htmlAttributes: new { @class = "control-label col-md-2" })
+                    <div class="col-md-10">
+                        @Html.EditorFor(model => model.Message, new { htmlAttributes = new { @class = "form-control" } })
+                        @Html.ValidationMessageFor(model => model.Message, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="col-md-offset-2 col-md-10">
+                        <input type="submit" value="Submit" class="btn btn-default" style="background-color:#ec8b00;color:#fff;"/>
+                    </div>
+                </div>
+            </div>
+    }
+ </div>
+   
+
+
+
+    @section Scripts {
+        @Scripts.Render("~/bundles/jqueryval")
+    }

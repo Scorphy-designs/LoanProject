@@ -1,0 +1,53 @@
+﻿@model IEnumerable<LoanProcessingSystem.Model.EnquiryTable>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Enquiries</h2>
+
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.EmailId)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.PhoneNo)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.PropertyType)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Date)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Message)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.EmailId)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.PhoneNo)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.PropertyType)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Date)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Message)
+        </td>
+        <td>
+            @Html.ActionLink("Details", "Details", new { id=item.EnquiryId }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.EnquiryId })
+        </td>
+    </tr>
+}
+
+</table>
